@@ -18,8 +18,8 @@ local plugin_settings = {
 
 for _, module in next, modules do
     utils.load_module(module);
-end;
+end
 
 for _, setting in next, plugin_settings do
     utils.load_module(setting);
-end;
+end

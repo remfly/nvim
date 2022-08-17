@@ -14,22 +14,9 @@ return require('packer').startup(function(use)
 
     use 'arcticicestudio/nord-vim';
 
-    use({
-        "iamcco/markdown-preview.nvim",
-        run = function() vim.fn["mkdp#util#install"]() end,
-    });
-
-    use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, });
-
-    use 'kyazdani42/nvim-tree.lua';
-
     use 'kyazdani42/nvim-web-devicons';
 
     use 'norcalli/nvim-colorizer.lua';
-
-    use 'windwp/nvim-autopairs';
-
-    use 'simrat39/rust-tools.nvim';
 
     use 'andweeb/presence.nvim';
 

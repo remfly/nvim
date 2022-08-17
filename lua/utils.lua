@@ -5,7 +5,7 @@ utils.load_module = function(module)
 
     if not success then
         error(string.format('Error loading module `%s`.\n\n%s.', module, err));
-    end;
-end;
+    end
+end
 
 return utils;
